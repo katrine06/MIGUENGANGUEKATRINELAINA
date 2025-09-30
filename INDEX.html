@@ -1,94 +1,11 @@
 <!doctype html>
 <html lang="fr">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Ton Nom</title>
-  <meta name="description" content="Portfolio de laina, etudiante en genie informatique nivau 2" />
-  <style>
-    /* ---------- Variables ---------- */
-    :root{
-      --bg:#66666a;
-      --card:#141414;
-      --accent:#ff79c6;   /* girly sombre */
-      --muted:#b0b0b0;
-      --radius:14px;
-      --maxw:1100px;
-      --shadow: 0 6px 24px rgba(0,0,0,0.4);
-    }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg);
-      color:#eee;
-      padding:28px 20px;
-      display:flex;justify-content:center;
-    }
-    .wrap{width:100%;max-width:var(--maxw)}
-
-    header{
-      display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;
-    }
-    .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-    .logo .mark{width:48px;height:48px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;color:#1a1a1d;box-shadow:var(--shadow)}
-    nav{display:flex;gap:14px}
-    nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:6px 10px;border-radius:8px}
-    nav a:hover{background:rgba(255,121,198,0.15);color:var(--accent)}
-
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center;margin-bottom:40px}
-    @media(max-width:880px){.hero{grid-template-columns:1fr}}
-
-    .card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
-    h1{font-size:28px;font-weight:700;margin-bottom:10px;color:#fff}
-    p.lead{color:var(--muted);line-height:1.6;margin-bottom:12px}
-    .tag{background:rgba(255,121,198,0.15);color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px;font-weight:600;display:inline-block;margin:4px 4px 0 0}
-
-    .profile{text-align:center;padding:26px}
-    .avatar{width:120px;height:120px;border-radius:50%;background:linear-gradient(180deg,#2a2a2d,#1a1a1d);display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700;color:var(--accent);margin:0 auto 14px auto;box-shadow:0 0 0 4px var(--accent),0 0 20px rgba(255,121,198,0.3)}
-
-    /* Parcours scolaire */
-    .timeline{border-left:3px solid var(--accent);padding-left:18px;margin-top:10px}
-    .entry{margin-bottom:16px}
-    .entry h3{margin:0;color:#fff;font-size:16px}
-    .entry small{color:var(--muted)}
-    .entry p{color:var(--muted);margin-top:6px;font-size:14px}
-
-    /* Contact + liens */
-    .contact-form input,.contact-form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #333;background:#2a2a2d;color:#fff;margin-top:6px;font-size:14px}
-    .contact-form button{margin-top:12px;padding:10px 14px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
-    .contact-form button:hover{background:#ff4faf}
-
-    footer{text-align:center;color:var(--muted);margin-top:40px;font-size:13px}
-    /* Design mobile */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  .card {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  h1, h2, p {
-    text-align: center;
-  }
-
-  /* Réorganise les éléments */
-  .section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Portfolio — LAÏNA</title>
+  <meta name="description" content="Portfolio de Laina, étudiante en génie informatique niveau 2" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="wrap">
@@ -97,20 +14,23 @@
         <div class="mark">MNKL</div>
         <div>
           <strong>LAÏNA</strong><br>
-          <small style="color:var(--muted)">Étudiante</small>
+          <small class="muted">Étudiante</small>
         </div>
       </a>
       <nav>
         <a href="#parcours">Parcours</a>
         <a href="#site">Mon site</a>
+        <a href="#attentes">Attentes</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <section class="hero">
       <div class="card">
-        <h1>Salut🖖je suis laina bienvenue sur mon portfolio</h1>
-        <p class="lead">Je suis une étudiante en genie informatique cycle DUT a l'IUT de Douala, passionnée par l’apprentissage et le design épuré j'aspire a etre date analyst en cycle ingenieur de l'ecole nationnal polytechnique de yaounde. Ce portfolio est un espace pour partager mon parcours scolaire et mes projets academique.</p>
+        <h1>Salut 🖖 je suis Laïna, bienvenue sur mon portfolio</h1>
+        <p class="lead">
+          Je suis une étudiante en génie informatique (cycle DUT à l'IUT de Douala), passionnée par l’apprentissage et le design épuré. J'aspire à devenir <strong>data analyst</strong> en cycle ingénieur à l'École Nationale Polytechnique de Yaoundé. Ce portfolio est un espace pour partager mon parcours scolaire et mes projets académiques.
+        </p>
         <div>
           <span class="tag">Étudiante</span>
           <span class="tag">Créative</span>
@@ -120,130 +40,83 @@
 
       <aside class="card profile">
         <div class="avatar">ML</div>
-        <h2 style="margin:0">LAÏNA</h2>
-        <small style="color:var(--muted)">Débutante en développement & design</small>
+        <h2>LAÏNA</h2>
+        <small class="muted">Débutante en développement & design</small>
       </aside>
     </section>
 
+    <!-- Parcours scolaire -->
     <section id="parcours" class="card">
-      <h2 style="margin-bottom:10px">📚 Parcours scolaire</h2>
+      <h2>📚 Parcours scolaire</h2>
       <div class="timeline">
         <div class="entry">
           <h3>2025 — Institut Universitaire de Technologie</h3>
           <small>DUT 2 / Niveau actuel</small>
-          <p>genie informatique(axes sur la programme oriente objet et sur les projet informatique de forte portee) .</p>
+          <p>Génie informatique (axé sur la programmation orientée objet et les projets informatiques de grande envergure).</p>
         </div>
         <div class="entry">
           <h3>2023 — GBBHS GRAND SOUZA</h3>
           <small>Baccalauréat série C</small>
-          <p>Avec une moyenne generale de 11,67.</p>
+          <p>Avec une moyenne générale de 11,67.</p>
         </div>
         <div class="entry">
           <h3>2022 — GBHS GRAND SOUZA</h3>
-          <small>Probatoire serie C</small>
-          <P>Avec un moyenne generale de 12,04</P>
+          <small>Probatoire série C</small>
+          <p>Avec une moyenne générale de 12,04.</p>
         </div>
       </div>
     </section>
 
-    <section id="site" class="card" style="margin-top:20px">
+    <!-- Site web -->
+    <section id="site" class="card">
       <h2>🌐 Mon site web</h2>
-      <p class="lead">Visite mon site personnel pour plus ample connaissance  :</p>
-      <p><a href="https://katrine.netlify.app" style="color:var(--accent);font-weight:600" target="_blank">https://katrine.netlify.app</a></p>
-    </section>
-    <section id="attentes" class="card" style="margin-top:20px">
-  <h2 style="color:var(--accent); margin-bottom:12px;">✨ Mes attentes</h2>
-  <p class="lead">Bienvenue sur mon portfolio ! Je suis toujours ouverte à apprendre et à partager. J’aimerais que vous :</p>
-  <ul style="margin-top:10px; line-height:1.8; color:#eee; padding-left:20px; list-style:none;">
-    <li style="margin-bottom:10px; display:flex; align-items:center; transition:0.3s; cursor:default;">
-      <span style="color:var(--accent); margin-right:8px;">🎯</span>
-      Me proposez ou me recommander des <strong> ateliers </strong>  liés à l’informatique et à la data science.
-    </li>
-    <li style="margin-bottom:10px; display:flex; align-items:center; transition:0.3s; cursor:default;">
-      <span style="color:var(--accent); margin-right:8px;">💼</span>
-      Me contactez pour d’éventuelles <strong> participations à des stages </strong> afin de développer mes compétences.
-    </li>
-    <li style="margin-bottom:10px; display:flex; align-items:center; transition:0.3s; cursor:default;">
-      <span style="color:var(--accent); margin-right:8px;">📊</span>
-      Me donnez des conseils ou partagent des opportunités pour progresser en <strong>data science</strong>, domaine que j’aspire à maîtriser.
-    </li>
-    <li style="margin-bottom:10px; display:flex; align-items:center; transition:0.3s; cursor:default;">
-      <span style="color:var(--accent); margin-right:8px;">🤝</span>
-      Respectez le contenu et utilisent ce portfolio de manière positive et bienveillante.
-    </li>
-  </ul>
-</section>
-
-<style>
-  /* Hover léger sur chaque point de la liste */
-  #attentes ul li:hover {
-    transform: translateX(6px);
-    color: #ffb3d9; /* nuance girly claire au hover */
-  }
-</style>
-<section id="contact" style="font-family: 'Poppins', sans-serif; padding: 40px; max-width: 600px; margin: auto;">
-
-  <h2 style="text-align:center; color:#D6336C;">Me Contacter</h2>
-
-  <!-- Infos fixes -->
-  <div style="text-align:center; margin-bottom: 30px;">
-    <p><strong>Nom complet :</strong> MIGUE NGANGUE KATRINE LAÏNA</p>
-    <p>Email : <a href="mailto:nganguelaina@gmail.com" style="color:#6A1B9A; text-decoration:none;">nganguelaina@gmail.com</a></p>
-    <p>WhatsApp : <a href="https://wa.me/237621578657" target="_blank" style="color:#6A1B9A; text-decoration:none;">+237 621 57 86 57</a></p>
-  </div>
-
-  <!-- Formulaire de contact -->
-  <h3 style="color:#D6336C; text-align:center;">Envoyer un message</h3>
-  <form action="mailto:nganguelaina@gmail.com" method="post" enctype="text/plain" style="display:flex; flex-direction:column; gap:15px;">
-
-    <input type="text" id="nom" name="nom" placeholder="Nom" required
-      style="padding:10px; border-radius:10px; border:1px solid #ccc; font-size:16px;">
-
-    <input type="email" id="email" name="email" placeholder="Email" required
-      style="padding:10px; border-radius:10px; border:1px solid #ccc; font-size:16px;">
-
-    <textarea id="message" name="message" rows="5" placeholder="Message" required
-      style="padding:10px; border-radius:10px; border:1px solid #ccc; font-size:16px;"></textarea>
-
-    <button type="submit" style="
-      background-color:#6A1B9A; 
-      color:white; 
-      border:none; 
-      padding:12px; 
-      border-radius:10px; 
-      font-size:16px; 
-      cursor:pointer;
-      transition: background 0.3s;">
-      Envoyer
-    </button>
-
-  </form>
-
-  <!-- Lien de téléchargement -->
-  <h3 style="color:#D6336C; text-align:center; margin-top:30px;">Télécharger mon CV / Portfolio</h3>
-  <div style="text-align:center;">
-    <a href="cv-laina.pdf" download>
-      <button style="
-        background-color:#D6336C;
-        color:white;
-        border:none;
-        padding:12px 20px;
-        border-radius:10px;
-        font-size:16px;
-        cursor:pointer;
-        transition: background 0.3s;">
-        Télécharger
-      </button>
-    </a>
-  </div>
-
-</section>
-      </script>
+      <p class="lead">Visite mon site personnel pour en savoir plus :</p>
+      <p><a href="https://katrine.netlify.app" target="_blank" class="link">https://katrine.netlify.app</a></p>
     </section>
 
-    <footer>© <span id="year"></span> laÏna — Portfolio </footer>
+    <!-- Attentes -->
+    <section id="attentes" class="card">
+      <h2>✨ Mes attentes</h2>
+      <p class="lead">Je suis toujours ouverte à apprendre et à partager. J’aimerais que vous :</p>
+      <ul class="attentes-list">
+        <li>🎯 Me proposez des <strong>ateliers</strong> liés à l’informatique et à la data science.</li>
+        <li>💼 Me contactez pour d’éventuelles <strong>participations à des stages</strong>.</li>
+        <li>📊 Partagiez des conseils ou opportunités pour progresser en <strong>data science</strong>.</li>
+        <li>🤝 Respectiez ce portfolio de manière positive et bienveillante.</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card contact-section">
+      <h2>📩 Me Contacter</h2>
+
+      <div class="contact-info">
+        <p><strong>Nom :</strong> MIGUE NGANGUE KATRINE LAÏNA</p>
+        <p>Email : <a href="mailto:nganguelaina@gmail.com">nganguelaina@gmail.com</a></p>
+        <p>WhatsApp : <a href="https://wa.me/237621578657" target="_blank">+237 621 57 86 57</a></p>
+      </div>
+
+      <h3>Envoyer un message</h3>
+      <form action="mailto:nganguelaina@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <input type="text" name="nom" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <h3>Télécharger mon CV / Portfolio</h3>
+      <div class="download">
+        <a href="cv-laina.pdf" download>
+          <button>Télécharger</button>
+        </a>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> LAÏNA — Portfolio</footer>
   </div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
